@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+  "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashimwe23/Baumeister-website-project.git"
