@@ -185,6 +185,12 @@
   .sticky {
     position: sticky;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -200,6 +206,21 @@
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
   }
+  .mr-8 {
+    margin-right: calc(var(--spacing) * 8);
+  }
+  .mr-80 {
+    margin-right: calc(var(--spacing) * 80);
+  }
+  .mr-84 {
+    margin-right: calc(var(--spacing) * 84);
+  }
+  .mr-85 {
+    margin-right: calc(var(--spacing) * 85);
+  }
+  .-ml-96 {
+    margin-left: calc(var(--spacing) * -96);
+  }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -208,6 +229,9 @@
   }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
+  }
+  .ml-9 {
+    margin-left: calc(var(--spacing) * 9);
   }
   .ml-40 {
     margin-left: calc(var(--spacing) * 40);
@@ -220,6 +244,12 @@
   }
   .ml-64 {
     margin-left: calc(var(--spacing) * 64);
+  }
+  .ml-90 {
+    margin-left: calc(var(--spacing) * 90);
+  }
+  .ml-96 {
+    margin-left: calc(var(--spacing) * 96);
   }
   .flex {
     display: flex;
@@ -374,6 +404,10 @@
   .leading-14 {
     --tw-leading: calc(var(--spacing) * 14);
     line-height: calc(var(--spacing) * 14);
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
   }
   .leading-tight {
     --tw-leading: var(--leading-tight);
