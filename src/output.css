@@ -32,6 +32,9 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -212,6 +215,9 @@
   .top-0 {
     top: 0;
   }
+  .z-50 {
+    z-index: 50;
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -316,14 +322,50 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#FFE800\] {
+    background-color: #FFE800;
+  }
+  .bg-\[\#FFE\] {
+    background-color: #FFE;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
+  }
+  .pr-40 {
+    padding-right: calc(var(--spacing) * 40);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-30 {
+    padding-bottom: calc(var(--spacing) * 30);
+  }
+  .pb-50 {
+    padding-bottom: calc(var(--spacing) * 50);
   }
   .text-right {
     text-align: right;
   }
   .align-middle {
     vertical-align: middle;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -353,9 +395,21 @@
     --tw-leading: calc(var(--spacing) * 14);
     line-height: calc(var(--spacing) * 14);
   }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -370,6 +424,9 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .\[clip-path\:polygon\(0_0\,100\%_0\%\,100\%_90\%\,40\%_95\%\,0_91\%\)\] {
+    clip-path: polygon(0 0,100% 0%,100% 90%,40% 95%,0 91%);
   }
 }
 @property --tw-space-x-reverse {
