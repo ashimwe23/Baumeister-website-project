@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
     --container-xl: 36rem;
     --text-lg: 1.125rem;
@@ -20,7 +22,6 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-normal: 400;
-    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -190,6 +191,9 @@
   .inset-0 {
     inset: 0;
   }
+  .inset-x-0 {
+    inset-inline: 0;
+  }
   .top-0 {
     top: 0;
   }
@@ -205,14 +209,32 @@
   .top-\[4\%\] {
     top: 4%;
   }
+  .top-\[7\%\] {
+    top: 7%;
+  }
   .top-\[8\%\] {
     top: 8%;
   }
   .top-\[12\%\] {
     top: 12%;
   }
+  .top-\[26\%\] {
+    top: 26%;
+  }
+  .top-\[27\%\] {
+    top: 27%;
+  }
+  .top-\[28\%\] {
+    top: 28%;
+  }
   .top-\[30\%\] {
     top: 30%;
+  }
+  .top-\[100\%\] {
+    top: 100%;
+  }
+  .top-\[100\] {
+    top: 100;
   }
   .right-\[0\%\] {
     right: 0%;
@@ -220,14 +242,65 @@
   .left-\[0\%\] {
     left: 0%;
   }
+  .left-\[1\%\] {
+    left: 1%;
+  }
+  .left-\[2\%\] {
+    left: 2%;
+  }
+  .left-\[4\%\] {
+    left: 4%;
+  }
+  .left-\[9\%\] {
+    left: 9%;
+  }
+  .left-\[9\.5\%\] {
+    left: 9.5%;
+  }
+  .left-\[10\%\] {
+    left: 10%;
+  }
+  .left-\[10\.5\%\] {
+    left: 10.5%;
+  }
+  .left-\[11\%\] {
+    left: 11%;
+  }
+  .left-\[12\%\] {
+    left: 12%;
+  }
+  .left-\[13\%\] {
+    left: 13%;
+  }
+  .left-\[15\%\] {
+    left: 15%;
+  }
   .left-\[17\%\] {
     left: 17%;
+  }
+  .left-\[18\%\] {
+    left: 18%;
+  }
+  .left-\[20\%\] {
+    left: 20%;
   }
   .left-\[21\%\] {
     left: 21%;
   }
+  .left-\[25\%\] {
+    left: 25%;
+  }
   .left-\[37\%\] {
     left: 37%;
+  }
+  .left-\[40\%\] {
+    left: 40%;
+  }
+  .left-\[40\.5\%\] {
+    left: 40.5%;
+  }
+  .left-\[41\%\] {
+    left: 41%;
   }
   .left-\[42\%\] {
     left: 42%;
@@ -249,6 +322,27 @@
   }
   .z-50 {
     z-index: 50;
+  }
+  .z-\[60\] {
+    z-index: 60;
+  }
+  .-mt-\[00px\] {
+    margin-top: calc(00px * -1);
+  }
+  .-mt-\[100\] {
+    margin-top: calc(100 * -1);
+  }
+  .-mt-\[100px\] {
+    margin-top: calc(100px * -1);
+  }
+  .-mt-\[300px\] {
+    margin-top: calc(300px * -1);
+  }
+  .-mt-\[800px\] {
+    margin-top: calc(800px * -1);
+  }
+  .-mt-\[5000px\] {
+    margin-top: calc(5000px * -1);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -295,11 +389,32 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-\[2\] {
+    height: 2;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
   .h-\[60\%\] {
     height: 60%;
   }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[250\] {
+    height: 250;
+  }
   .h-\[250vh\] {
     height: 250vh;
+  }
+  .h-\[280vh\] {
+    height: 280vh;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .w-\[22\%\] {
     width: 22%;
@@ -319,6 +434,12 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
   .items-center {
     align-items: center;
   }
@@ -335,11 +456,24 @@
       margin-inline-end: calc(calc(var(--spacing) * 90) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-\[\#EFECEA\] {
     background-color: #EFECEA;
   }
   .bg-\[\#FFE800\] {
     background-color: #FFE800;
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
@@ -398,6 +532,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .\[clip-path\:polygon\(0_0\,100\%_0\%\,100\%_90\%\,40\%_95\%\,0_91\%\)\] {
     clip-path: polygon(0 0,100% 0%,100% 90%,40% 95%,0 91%);
   }
@@ -407,6 +545,11 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -415,12 +558,19 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
