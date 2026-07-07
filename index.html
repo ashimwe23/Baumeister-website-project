@@ -17,14 +17,19 @@
 <body class="bg-[#EFECEA]">
     
         <!-- navbar -->
-         <div class="flex justify-around space-x-90 mt-10 sticky top-2 z-50">
+         <div class="flex justify-around items-center lg:space-x-90 mt-10 sticky top-2 z-50 mx-3">
            <div>
-            <h1 class="font-semibold text-2xl">DE <br> EN</h1>
+            <h1 class="font-semibold md:text-2xl text-xl">DE <br> EN</h1>
            </div> 
         
-           <div><h1 class="font-semibold text-5xl">Baumeister</h1></div>
+           <div><h1 class="font-semibold md:text-5xl text-4xl">Baumeister</h1></div>
 
-           <div>
+           <a href class="lg:hidden">
+            <img src="src\Assets\menu.png">
+           </a>
+          
+
+          <div class="hidden lg:flex flex-col justify-center">
             <ul class="text-xl">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -38,10 +43,10 @@
         
      <section class="hero">
     
-          <div class="relative   h-[250vh]" >
+          <div class="relative h-[250vh]" >
 
 
-            <div id="text" class="absolute inset-0 mt-60 text-5xl z-50 flex justify-center text-[#EFECEA]"> 
+            <div id="text" class=" md:hidden absolute inset-0 mt-60 text-5xl z-50 flex justify-center text-[#EFECEA]"> 
             <h1>We create focus and <br>
                drive impact with <br> 
                communication that <br> 
@@ -64,7 +69,7 @@
 
     
          <!-- About page -->
-          <section class=" -mt-[800px]">
+          <section class="-mt-[760px]">
             <div>
                 <p class="font-regular text-4xl leading-16 ml-60">
                   We are a Berlin-based communications <br>
