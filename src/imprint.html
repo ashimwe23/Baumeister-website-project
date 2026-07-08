@@ -120,7 +120,7 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
     </div><!--grand div-->
     
     <!--Third part-->
-    <div class="w-[355px] h-[420px] mt-[103px] flex flex-col gap-6 md:w-[360px] md:h[360px] md:mt-[462px] ml-[300px] md:text-right">
+    <div class="w-[355px] h-[420px] mt-[103px] flex flex-col gap-6 md:min-w-[360px] md:min-h-[360px] md:mt-[600px] ml-[300px] md:text-right md:ml-5">
         <h2 class="font-bold">DISCLAIMER</h2>
     <p class="leading-[1.35] md:px-2 max-w-[360px]">Despite all due care, no liabiliry can be accepted for the accuracy, completeness and up-
         to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister com
@@ -150,12 +150,52 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
 </div>
 
     <div class="w-[211px] h-[57px] ml-[17px] text-[15px] mt-[21px] md:hidden">
-        <a href="#">hallo@agentur-baumeister.com</a>
+        <a href="#" class="underline">hallo@agentur-baumeister.com</a>
         <p>+49 (0)30 - 490 827 87</p>
     </div>
 
     <!--responsive footer-->
-<div class="hidden md:flex md:justify-between">
+        <div class="hidden md:flex md:justify-between lg:hidden">
+            <div>
+                <p>Agentur Baumeister</p>
+                <p>Böckhstraße 13</p>
+                <p>10967 Berlin</p>
+            </div>
+            
+                <div>
+                    <a href="#" class="underline">hallo@agentur-baumeister.com</a>
+                    <p>+49 (0)30 - 490 827 87</p>
+                </div>
+            
+        </div>
+        
+        
+        
+        <!--Last part-->
+        <div class="flex justify-between gap-2 text-[15px] mt-[68px] md:hidden lg:hidden">
+            <a href="#" class="no-underline">Datenschutz</a>
+            <a href="#" class="no-underline">Impressum</a>
+            <a href="#" class="no-underline">LinkedIn</a>
+            <a href="#" class="no-underline mr-3">Instagram</a>
+        </div>
+        
+        <!--responsive-->
+        <!--Last part-->
+        <div class="hidden md:flex md:justify-between lg:hidden">
+            <a href="#" class="no-underline">LinkedIn</a>
+            <a href="#" class="no-underline">Instagram</a>
+            <a href="#" class="no-underline">Impressum</a>
+            <a href="#" class="no-underline">Datenschutz</a>
+            
+        </div>
+
+
+
+<!--responsivness desktop footer-->
+
+<div class="hidden md:hidden lg:flex justify-between">
+
+<div class="hidden lg:flex md:hidden lg:gap-x-30 ">
     <div>
         <p>Agentur Baumeister</p>
         <p>Böckhstraße 13</p>
@@ -163,7 +203,7 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
     </div>
     
         <div>
-            <a href="#">hallo@agentur-baumeister.com</a>
+            <a href="#" class="underline">hallo@agentur-baumeister.com</a>
             <p>+49 (0)30 - 490 827 87</p>
         </div>
     
@@ -171,22 +211,25 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
 
 
 
-<!--Last part-->
-<div class="flex justify-between gap-2 text-[15px] mt-[68px] md:hidden">
-    <a href="#" class="no-underline">Datenschutz</a>
-    <a href="#" class="no-underline">Impressum</a>
+
+<div class="hidden lg:flex lg:justify-between md:hidden lg:gap-30">
     <a href="#" class="no-underline">LinkedIn</a>
     <a href="#" class="no-underline">Instagram</a>
+    <div class=" hidden lg:flex lg:flex-col lg:items-center md:flex md:hidden">
+    <a href="#" class="no-underline">Impressum</a>
+    <a href="#" class="no-underline">Datenschutz</a>
+    </div>
+    
 </div>
 
-<!--responsive-->
-<!--Last part-->
-<div class="hidden md:flex md:justify-between">
-    <a href="#" class="no-underline">LinkedIn</a>
-    <a href="#" class="no-underline">Instagram</a>
-    <a href="#" class="no-underline">Impressum</a>
-    <a href="#" class="no-underline">Datenschutz</a>
+
 </div>
+
+
+
+    
+
+
 
 </body>
 </html>
