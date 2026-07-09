@@ -969,6 +969,11 @@
   .\[clip-path\:polygon\(0_0\,100\%_0\%\,100\%_90\%\,40\%_95\%\,0_91\%\)\] {
     clip-path: polygon(0 0,100% 0%,100% 90%,40% 95%,0 91%);
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
   .md\:fixed {
     @media (width >= 48rem) {
       position: fixed;
