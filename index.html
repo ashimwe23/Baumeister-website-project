@@ -56,17 +56,13 @@
 
 
         <!-- The Hero section  -->
-        
-  <section class="hero">
-    <div class="relative">
-
     <!-- Hero Text -->
      <section class="hero">
     
           <div class="relative " >
 
 
-            <div id="text" class="absolute inset-0 lg:mt-60 md:mt-20 md:text-3xl mt-16  lg:text-5xl z-50 flex justify-center text-[#EFECEA]"> 
+            <div id="text" class="absolute text-center inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-4xl mt-36  lg:text-5xl z-60 flex justify-center text-[#EFECEA]"> 
             <h1>We create focus and <br>
                drive impact with <br> 
                communication that <br> 
@@ -76,8 +72,20 @@
           </div>
 
 
+          <!-- Hero section on Small & medium screens -->
+          <div class="lg:hidden md:mt-64 mt-72 md:h-[80vh] h-[50vh]">
+             <img id="yellow-mobile" src="src/Assets/yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[77%] h-[94%] z-10">
+             <img id="green-mobile" src="src/Assets/green.png" alt="" class="absolute top-[14%] left-[1%] right-[20%] w-[55%] z-50">
+             <img id="red-mobile" src="src/Assets/red.png" alt="" class="absolute  left-[17%] top-[50%] w-[80%] h-[47%] z-40">
+             <img id="pink-mobile" src="src/Assets/pink.png" alt="" class="absolute top-[1%] left-[66%] w-[21%] z-0">
+             <img id="blue-mobile" src="src/Assets/blue.png" alt="" class="absolute top-[20%]  right-[1%] w-[62%] z-30">
+             <img id="green2-mobile" src="src/Assets/green-right.png" alt="" class="absolute top-[25%] right-[0%] w-[42%] z-20">
+            </div>
+        
+          
+
             <!-- Hero section on desktop -->
-            <div class="lg:h-[250vh] md:h-[50vh] h-[60vh]">
+            <div class="lg:h-[250vh] md:hidden hidden">
              <img id="yellow" src="src\Assets\yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[50%] h-[60%] z-10">
              <img id="green" src="src\Assets\green.png" alt="" class="absolute top-[7%] left-[21%] w-[36%] z-30">
              <img id="red" src="src\Assets\red.png" alt="" class="absolute  left-[9.5%] top-[26%] w-[50%] z-20">
@@ -224,13 +232,13 @@
       
           <!-- DESKTOP FORMAT -->
            
-          <div class="md:hidden hidden lg:block lg:mt-20 lg:pb-7 ">
-            <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl">
+          <div class="md:hidden hidden lg:block lg:mt-20 lg:pb-7  ">
+            <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl ">
              <li class=""><a href="https://baumeisteragentur-group4.netlify.app/index.html">Agentur Baumeister <br> Böckhstraße 13 <br> 10967 Berlin</a></li>
              <li><h1 class="underline">hallo@agentur-baumeister.com</h1><h1>+49 (0)30 - 490 827 87</h1></li>
              <li><a href="https://www.linkedin.com/company/agentur-baumeister/about/">LinkedIn</a></li>
              <li><a href="https://www.instagram.com/baumeister_agency">Instagram</a></li>
-             <li><a href="#imprint">Imprint</a> <br> <a href="#policy">Data Privacy</a></li>
+             <li class="text-right"><a href="#imprint">Imprint</a> <br> <a href="#policy">Data Privacy</a></li>
              
             </ul>
           </div>
