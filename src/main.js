@@ -6,7 +6,7 @@ const tl = gsap.timeline({
     start: "top top",
     end: "+=1500",
     scrub: true,
-    pin: true,
+    pin: true,                                                                                                                                                 
   },
 });
 
