@@ -46,19 +46,17 @@ tl.to(["#green2"], {
 
 tl.to("#yellow", {
   y: -420,
-  duration: 1,
+  duration: 0.8,
 },"<");
-
-
-
-
 
 tl.to("#text", {
   y: -150,
   duration: 1,
 }, "<");
 
-
-
+tl.to("#hero-cover", {
+  y: -300,
+  duration: 1,
+}, "<");
 
 
