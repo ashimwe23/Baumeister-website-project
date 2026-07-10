@@ -12,32 +12,40 @@ const tl = gsap.timeline({
 
 tl.to("#pink", {
   y: -19,
-  duration: 1,
+  duration: 0.7,
 }, "<");
 
 
 tl.to("#green2", {
   y: -190,
-  duration: 0.6,
+  duration: 1,
 },"<");
 
-tl.to(["#blue","#green","#red"], {
+tl.to(["#blue"], {
   y: -60,
-  duration: 1,
+  duration: 0.2,
 }, "<");
-
-tl.to(["#red", "#green2"], {
-  y: -370,
- duration: 1,
-}), "<";
 
 
 tl.to("#green", {
   y: -105,
-  duration: 1,
+  duration: 0.3,
 }, "<");
-tl.to("#yellow", {
+
+
+tl.to("#red", {
+  y: -320,
+  duration: 1.3,
+}, "<");
+
+tl.to(["#green2"], {
   y: -370,
+ duration: 0.2,
+}), "<";
+
+
+tl.to("#yellow", {
+  y: -420,
   duration: 1,
 },"<");
 
