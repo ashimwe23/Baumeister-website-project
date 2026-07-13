@@ -64,3 +64,56 @@ tl.to("#hero-cover", {
 }, "<");
 
 
+// The mobile hero section responsiveness
+
+
+tl.to("#pink-mobile", {
+  y: -350,
+  duration: 0.8,
+}, "<");
+
+
+
+tl.to("#green2-mobile", {
+  y: -380,
+  duration: 1,
+},"<");
+
+
+
+tl.to(["#blue-mobile", "#green-mobile"],{
+  y: -400,
+  duration: 1,
+}, "<");
+
+
+tl.to("#red-mobile", {
+  y: -500,
+  duration: 1,
+}, "<");
+
+
+
+tl.to("#yellow-mobile", {
+  y: -460,
+  duration: 1,
+},"<");
+
+tl.to(["#green2-mobile"], {
+  y: -480,
+ duration: 0.8,
+}), "<";
+
+
+
+tl.to("#text-mobile", {
+  y: -480,
+  duration: 1,
+}, "<");
+
+
+
+tl.to("#hero-cover-mobile", {
+  y: -490,
+  duration: 1.5,
+}, "<");
