@@ -59,7 +59,7 @@ tl.to("#yellow", {
 
 
 tl.to("#hero-cover", {
-  y: -300,
+  y: -180,
   duration: 1,
 }, "<");
 
