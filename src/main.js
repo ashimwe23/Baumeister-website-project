@@ -1,0 +1,119 @@
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "+=1500",
+    scrub: true,
+    pin: true,                                                                                                                                                 
+  },
+});
+
+tl.to("#pink", {
+  y: -19,
+  duration: 0.2,
+}, "<");
+
+tl.to("#text", {
+  y: -480,
+  duration: 1,
+}, "<");
+
+tl.to("#green2", {
+  y: -190,
+  duration: 1,
+},"<");
+
+
+
+tl.to(["#blue"], {
+  y: -60,
+  duration: 0.2,
+}, "<");
+
+
+tl.to("#green", {
+  y: -105,
+  duration: 0.3,
+}, "<");
+
+
+
+tl.to("#red", {
+  y: -320,
+  duration: 1.3,
+}, "<");
+
+tl.to(["#green2"], {
+  y: -370,
+ duration: 0.2,
+}), "<";
+
+
+tl.to("#yellow", {
+  y: -420,
+  duration: 0.3,
+},"<");
+
+
+
+tl.to("#hero-cover", {
+  y: -180,
+  duration: 1,
+}, "<");
+
+
+// The mobile hero section responsiveness
+
+
+tl.to("#pink-mobile", {
+  y: -350,
+  duration: 0.8,
+}, "<");
+
+
+
+tl.to("#green2-mobile", {
+  y: -380,
+  duration: 1,
+},"<");
+
+
+
+tl.to(["#blue-mobile", "#green-mobile"],{
+  y: -400,
+  duration: 1,
+}, "<");
+
+
+tl.to("#red-mobile", {
+  y: -500,
+  duration: 1,
+}, "<");
+
+
+
+tl.to("#yellow-mobile", {
+  y: -460,
+  duration: 1,
+},"<");
+
+tl.to(["#green2-mobile"], {
+  y: -480,
+ duration: 0.8,
+}), "<";
+
+
+
+tl.to("#text-mobile", {
+  y: -480,
+  duration: 1,
+}, "<");
+
+
+
+tl.to("#hero-cover-mobile", {
+  y: -490,
+  duration: 1.5,
+}, "<");

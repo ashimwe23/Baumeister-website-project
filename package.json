@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-  "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashimwe23/Baumeister-website-project.git"
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ashimwe23/Baumeister-website-project#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.1",
+    "gsap": "^3.15.0",
     "tailwindcss": "^4.3.1"
   }
 }
