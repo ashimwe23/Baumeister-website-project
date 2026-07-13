@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,28 +17,28 @@
 <body class="bg-[#EFECEA]">
     
         <!-- navbar -->
-      <div class="flex justify-between items-center px-4 md:px-6 lg:px-14 py-3 sticky top-0 z-50">
+      <div class="flex justify-between items-center px-4 md:px-6 lg:px-8 py-3 sticky top-0 z-50">
 
     <!-- Language -->
        <div>
-         <h1 class="font-normal text-md md:text-3xl lg:text-3xl">
+         <h1 class="font-normal text-md md:text-3xl lg:text-2xl">
             DE <br> EN
          </h1>
       </div>
 
     <!-- Logo -->
       <div>
-        <h1 class="font-semibold text-3xl md:text-[55px] lg:text-5xl">
+        <h1 class="font-semibold text-3xl md:text-[55px] lg:text-6xl">
             Baumeister
         </h1>
      </div>
 
     <!-- Desktop Menu -->
      <div class="hidden lg:block">
-        <ul class="text-2xl">
+        <ul class="text-2xl lg:text-right ">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#references">Reference</a></li>
+            <li><a href="#reference">Reference</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
      </div>
@@ -56,17 +56,17 @@
 
 
         <!-- The Hero section  -->
-        
-  <section class="hero">
-    <div class="relative">
-
     <!-- Hero Text -->
      <section class="hero">
     
           <div class="relative " >
 
 
+<<<<<<< HEAD
             <div id="text" class="absolute inset-0 lg:mt-60 md:mt-20 md:text-3xl mt-16  lg:text-5xl z-50 flex justify-center text-[#EFECEA] "> 
+=======
+            <div id="text" class="absolute md:text-center lg:text-center px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-4xl mt-36  lg:text-5xl z-60 flex justify-center text-[#EFECEA]"> 
+>>>>>>> 2f4ff38be866052e71656a7d3b0696032f9823bb
             <h1>We create focus and <br>
                drive impact with <br> 
                communication that <br> 
@@ -76,8 +76,20 @@
           </div>
 
 
+          <!-- Hero section on Small & medium screens -->
+          <div class="lg:hidden md:mt-64 mt-72 md:h-[80vh] h-[50vh]">
+             <img id="yellow-mobile" src="src/Assets/yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[77%] h-[94%] z-10">
+             <img id="green-mobile" src="src/Assets/green.png" alt="" class="absolute top-[14%] left-[1%] right-[20%] w-[55%] z-50">
+             <img id="red-mobile" src="src/Assets/red.png" alt="" class="absolute  left-[17%] top-[50%] w-[80%] h-[47%] z-40">
+             <img id="pink-mobile" src="src/Assets/pink.png" alt="" class="absolute top-[1%] left-[66%] w-[21%] z-0">
+             <img id="blue-mobile" src="src/Assets/blue.png" alt="" class="absolute top-[20%]  right-[1%] w-[62%] z-30">
+             <img id="green2-mobile" src="src/Assets/green-right.png" alt="" class="absolute top-[25%] right-[0%] w-[42%] z-20">
+            </div>
+        
+          
+
             <!-- Hero section on desktop -->
-            <div class="lg:h-[250vh] md:h-[50vh] h-[60vh]">
+            <div class="lg:h-[250vh] lg:block md:hidden hidden">
              <img id="yellow" src="src\Assets\yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[50%] h-[60%] z-10">
              <img id="green" src="src\Assets\green.png" alt="" class="absolute top-[7%] left-[21%] w-[36%] z-30">
              <img id="red" src="src\Assets\red.png" alt="" class="absolute  left-[9.5%] top-[26%] w-[50%] z-20">
@@ -85,16 +97,22 @@
              <img id="blue" src="src\Assets\blue.png" alt="" class="absolute top-[4%] left-[40.5%] w-[44%] z-40">
              <img id="green2" src="src\Assets\green-right.png" alt="" class="absolute top-[12%] right-[0%] w-[29%] z-30">
              </div>
-            <!-- <div class="bg-amber-300 h-[50vh] absolute z-[60] top-[100%] inset-x-0 "></div> -->
+             <!-- <div class="lg:bg-[#EFECEA] lg:h-[50vh] absolute lg:z-50 lg:top-[110%] inset-x-0 "></div>  -->
           </div>
                 
          </section>
 
     
          <!-- About page -->
+<<<<<<< HEAD
           <section class="mt-20 md:mt-32 lg:-mt-[750px]">
             <div>
                 <p class="text-2xl md:text-[38px] lg:text-[47px] leading-7 md:leading-14 lg:leading-20 mx-8  md:px-20 lg:ml-32">
+=======
+          <div class="lg:mb-20 flex items-center justify-center min-h-screen">
+          <section id="about" class="mt-20 md:mt-32 lg:-mt-[750px] lg:py-12">
+                <p class="text-2xl md:text-[38px] lg:text-[20px] lg:font-normal md:leading-14 lg:leading-10 mx-8  md:px-20 lg:ml-32 lg:mt-40">
+>>>>>>> 2f4ff38be866052e71656a7d3b0696032f9823bb
                   We are a Berlin-based communications 
                   agency specialising in helping companies 
                   and brands find their voice and position 
@@ -107,13 +125,14 @@
                   experience, we have honed our skills in giving 
                   brands their unmistakable identity and 
                   making them visible in the long term.</p>
+             <div class="hidden lg:top-20 lg:z-40 lg:flex justify-center lg:mt-12 md:mt-28">
+               <img src="src/Assets/aboutlg.png" class="w-38 md:w-65 md:h-30 lg:w-60">
             </div>
-          <section>
-
+         </section>
+          </div>
           <!-- Service page -->
-       <section>
-        <div>
-            <div class="lg:sticky lg:top-0 lg:z-40 flex justify-center  mt-12 md:mt-28 "> <img src="src\Assets\aboutlg.png" alt="" class="w-38 md:w-65 md:h-30 lg:w-55"></div>
+       <section id="services" class="lg:mt-20">
+            
 
             <div class="flex flex-col md:flex-col lg:flex-row lg:px-40 gap-6 lg:justify-center pl-10 md:px-12 mt-16 lg:mt-24"> 
 
@@ -155,7 +174,7 @@
        </section>  
        
        <!-- Reference -->
-        <section>
+        <section id="reference">
         
         <div class="mt-20 md:28 lg:mt-40  text-right md:text-right lg:text-right px-14 md:px-30 lg:pr-48 font-outfit text-xl md:text-2xl lg:text-2xl pb-20 md:pb-32 lg:pb-50 pt-16 md:pt-20 lg:pt-30 [clip-path:polygon(0_0,100%_0%,100%_90%,40%_95%,0_91%)] bg-[#FFE800]">
           <ul class="mb-20">
@@ -194,7 +213,7 @@
 
 
         <!-- Footer or Contact -->
-
+<section id="contact">
 
         <div class=" md:flex md:justify-center px-7 md:mt-7 lg:mb-10">
            <img src="src\Assets\red-footer.png" class=" w-87  lg:w-150">
@@ -226,19 +245,29 @@
       
           <!-- DESKTOP FORMAT -->
            
+<<<<<<< HEAD
           <div class="lg:mt-20 lg:pb-7 hidden md:hidden lg:block">
 
             <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl">
+=======
+          <div class="md:hidden hidden lg:block lg:mt-20 lg:pb-7  ">
+            <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl ">
+>>>>>>> 2f4ff38be866052e71656a7d3b0696032f9823bb
              <li class=""><a href="https://baumeisteragentur-group4.netlify.app/index.html">Agentur Baumeister <br> Böckhstraße 13 <br> 10967 Berlin</a></li>
              <li><h1 class="underline">hallo@agentur-baumeister.com</h1><h1>+49 (0)30 - 490 827 87</h1></li>
              <li><a href="https://www.linkedin.com/company/agentur-baumeister/about/">LinkedIn</a></li>
              <li><a href="https://www.instagram.com/baumeister_agency">Instagram</a></li>
+<<<<<<< HEAD
              <li><a href="#imprint">Imprint</a> <br> <a href="#policy">Data Privacy</a></li>
 
+=======
+             <li class="text-right"><a href="#imprint">Imprint</a> <br> <a href="#policy">Data Privacy</a></li>
+             
+>>>>>>> 2f4ff38be866052e71656a7d3b0696032f9823bb
             </ul>
 
           </div>
-
+</section>
 
 
 
