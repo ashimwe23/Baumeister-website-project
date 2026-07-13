@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
 
     <!-- Logo -->
       <div>
-        <h1 class="font-semibold text-3xl md:text-[55px] lg:text-5xl">
+        <h1 class="font-semibold text-3xl md:text-[55px] lg:text-6xl">
             Baumeister
         </h1>
      </div>
@@ -62,7 +62,11 @@
           <div class="relative " >
 
 
+ 
+            <div id="text" class="absolute inset-0 lg:mt-60 md:mt-20 md:text-3xl mt-16  lg:text-5xl z-50 flex justify-center text-[#EFECEA] "> 
+
             <div id="text" class="absolute md:text-center lg:text-center px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-4xl mt-36  lg:text-5xl z-60 flex justify-center text-[#EFECEA]"> 
+
             <h1>We create focus and <br>
                drive impact with <br> 
                communication that <br> 
@@ -84,8 +88,9 @@
              
             </div>
         
+          
 
-               <!-- Hero section on desktop -->
+            <!-- Hero section on desktop -->
             <div class="lg:h-[250vh] lg:block md:hidden hidden">
              <img id="yellow" src="src\Assets\yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[50%] h-[60%] z-10">
              <img id="green" src="src\Assets\green.png" alt="" class="absolute top-[7%] left-[21%] w-[36%] z-30">
@@ -93,14 +98,8 @@
              <img id="pink" src="src\Assets\pink.png" alt="" class="absolute top-[1%] left-[37%] w-[22%] z-0">
              <img id="blue" src="src\Assets\blue.png" alt="" class="absolute top-[4%] left-[40.5%] w-[44%] z-40">
              <img id="green2" src="src\Assets\green-right.png" alt="" class="absolute top-[12%] right-[0%] w-[29%] z-30">
-             <div id="hero-cover" class="absolute left-0 right-0 top-[707px] h-[50vh] bg-[#EFECEA] z-60"></div>
-             <!--  -->
              </div>
-             
-
-
-
-              
+             <!-- <div class="lg:bg-[#EFECEA] lg:h-[50vh] absolute lg:z-50 lg:top-[110%] inset-x-0 "></div>  -->
           </div>
                 
          </section>
@@ -109,7 +108,12 @@
          <!-- About page -->
           <section id="about" class=" md:mt-20 lg:-mt-70 -pt-60 ">
             <div>
-                <p class="font-medium text-2xl md:text-[38px] lg:text-[47px] leading-7 md:leading-14 lg:leading-20 mx-8  md:px-20 lg:ml-32">
+                <p class="text-2xl md:text-[38px] lg:text-[47px] leading-7 md:leading-14 lg:leading-20 mx-8  md:px-20 lg:ml-32">
+
+          <div class="lg:mb-20 flex items-center justify-center min-h-screen">
+          <section id="about" class="mt-20 md:mt-32 lg:-mt-[750px] lg:py-12">
+                <p class="text-2xl md:text-[38px] lg:text-[20px] lg:font-normal md:leading-14 lg:leading-10 mx-8  md:px-20 lg:ml-32 lg:mt-40">
+
                   We are a Berlin-based communications 
                   agency specialising in helping companies 
                   and brands find their voice and position 
@@ -122,13 +126,14 @@
                   experience, we have honed our skills in giving 
                   brands their unmistakable identity and 
                   making them visible in the long term.</p>
+             <div class="hidden lg:top-20 lg:z-40 lg:flex justify-center lg:mt-12 md:mt-28">
+               <img src="src/Assets/aboutlg.png" class="w-38 md:w-65 md:h-30 lg:w-60">
             </div>
-          <section>
-
+         </section>
+          </div>
           <!-- Service page -->
-       <section id="services">
-        <div>
-            <div class="hidden lg:sticky lg:z-40 lg:flex justify-center   mt-12 md:mt-28 "> <img src="src\Assets\aboutlg.png" alt="" class="w-38 md:w-65 md:h-30 lg:w-55 lg:-top-20"></div>
+       <section id="services" class="lg:mt-20">
+            
 
             <div class="flex flex-col md:flex-col lg:flex-row lg:px-40 gap-6 lg:justify-center pl-10 md:px-12 mt-16 lg:mt-24"> 
 
@@ -141,13 +146,12 @@
                 <h6 class="mt-8 md:mt-10 lg:mt-12">Influencer  relations</h6>
              </div>
             
-             <div class="relative ">
+             <div class="relative mt-14 md:w-120 lg:w-270 lg:mt-52 w-80 h-40 md:flex md:justify-center md:items-center md:mx-auto">
 
-                <div><img src="src\Assets\service.svg" alt="" class="w-75 mt-14 md:w-120 lg:w-270   lg:mt-52 "></div>
+                <img src="src\Assets\service.svg">
 
-                <div  class="absolute inset-0 items-center justify-center  leading relaxed lg:leading-6 lg:max-w-[84%] md:max-w-[70%]   flex text-[#EFECEA]  text-[16px] md:text-[26px] lg:text-lg  lg:px-12  leading-6 md:leading-8  font-normal">
-                <p class="" >
-                    Our strategic approach is a 
+                <div class="absolute inset-0 flex mx-3 items-center justify-center w-[300px] p-6 lg:leading-6 lg:max-w-[84%] md:max-w-[70%]">
+                    <p class="text-left text-[#EFECEA] text-[16px] md:text-[26px] lg:text-lg lg:px-12 md:leading-8 font-normal max-w-[85%]">Our strategic approach is a 
                     collaborative journey that starts 
                     with analysing the initial situation 
                     and leads to messages that cut 
@@ -161,8 +165,9 @@
                     you every step of the way, 
                     ensuring that every measure is 
                     effective.
-                </p>
+                  </p>
                 </div>
+                
              </div>
 
             </div>
@@ -172,8 +177,8 @@
        <!-- Reference -->
         <section id="reference">
         
-        <div class="mt-20 md:28 lg:mt-40 text-right md:text-right lg:text-right px-14 md:px-30 lg:pr-48 font-outfit text-xl md:text-2xl lg:text-2xl pb-20 md:pb-32 lg:pb-50 pt-16 md:pt-20 lg:pt-30 [clip-path:polygon(0_0,100%_0%,100%_90%,40%_95%,0_91%)] bg-[#FFE800]">
-          <ul>
+        <div class="mt-20 md:28 lg:mt-40  text-right md:text-right lg:text-right px-14 md:px-30 lg:pr-48 font-outfit text-xl md:text-2xl lg:text-2xl pb-20 md:pb-32 lg:pb-50 pt-16 md:pt-20 lg:pt-30 [clip-path:polygon(0_0,100%_0%,100%_90%,40%_95%,0_91%)] bg-[#FFE800]">
+          <ul class="mb-20">
             <li><a href="https://acehotel.com/">Ace Hotel</a></li>
             <li><a href="https://www.armedangels.com/">ARMEDANGELS</a></li>
             <li><a href="https://berlindesignweek.com/">Berliner Berg</a></li>
@@ -184,11 +189,11 @@
             <li><a href="https://www.tk.de/techniker">Die techniker</a></li>
             <li><a href="https://europeanstreetfood.com/">European Street Food Awards</a></li>
             <li><a href="https://www.grundmann-dentistry.de/">Grundmann Dentistry</a></li>
-            <li><a href="https://www.hornbach.de/aktuelles/werkstueck-edition/">HORNBACH werkstuck</a></li>
+            <li><a href="https://www.hornbach.de/aktuelles/werkstueck-edition/">HORNBACH Werkstück</a></li>
             <li><a href="https://www.hornbach.de/nachhaltigkeit/hornbach-macht-schule/">HORNBACH macht schule</a></li>
             <li><a href="https://ifdesign.com/de/">iF Design</a></li>
             <li><a href="https://kopka.berlin/">Kopka</a></li>
-            <li><a href="https://klh-massschuhe.com/de">KLH MaBschuhe</a></li>
+            <li><a href="https://klh-massschuhe.com/de">KLH Maßschuhe</a></li>
             <li><a href="https://www.lode-stijn.de/">Lode & Stijn</a></li>
             <li><a href="https://luya.bio/">Luya</a></li>
             <li><a href="https://www.meissen.com/net/">MEISSEN</a></li>
@@ -215,8 +220,9 @@
            <img src="src\Assets\red-footer.png" class=" w-87  lg:w-150">
         </div>
         
-        <div class="md:flex md:gap-80">
-        <div class=" font-medium md:font-medium  text-[15px] mx-4  md:px-2 mt-28 lg:hidden ">
+        <div class="md:flex md:justify-between">
+
+        <div class="font-medium md:font-medium  text-[15px] mx-4  md:px-2 mt-28 lg:hidden ">
            <p>Agentur Baumeister</p>
            <p>Böckhstraße 13</p>
            <p>10967 Berlin</p>
@@ -226,6 +232,7 @@
             <a href="#" class="underline">hallo@agentur-baumeister.com</a>
             <p class="md:text-right">+49 (0)30 - 490 827 87</p>
          </div>
+
         </div>
     
         
@@ -239,17 +246,34 @@
       
           <!-- DESKTOP FORMAT -->
            
+
+          <div class="lg:mt-20 lg:pb-7 hidden md:hidden lg:block">
+
+            <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl">
+
           <div class="md:hidden hidden lg:block lg:mt-20 lg:pb-7  ">
             <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl ">
+ 
              <li class=""><a href="https://baumeisteragentur-group4.netlify.app/index.html">Agentur Baumeister <br> Böckhstraße 13 <br> 10967 Berlin</a></li>
              <li><h1 class="underline">hallo@agentur-baumeister.com</h1><h1>+49 (0)30 - 490 827 87</h1></li>
              <li><a href="https://www.linkedin.com/company/agentur-baumeister/about/">LinkedIn</a></li>
              <li><a href="https://www.instagram.com/baumeister_agency">Instagram</a></li>
-             <li class="text-right"><a href="imprint.html">Imprint</a> <br> <a href="policy.html">Data Privacy</a></li>
+
              
+
+
+             <li class="text-right"><a href="#imprint">Imprint</a> <br> <a href="#policy">Data Privacy</a></li>
+             
+
             </ul>
+
           </div>
 </section>
+
+
+
+
+
 
          <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
