@@ -12,14 +12,20 @@ const tl = gsap.timeline({
 
 tl.to("#pink", {
   y: -19,
-  duration: 0.7,
+  duration: 0.2,
 }, "<");
 
+tl.to("#text", {
+  y: -480,
+  duration: 1,
+}, "<");
 
 tl.to("#green2", {
   y: -190,
   duration: 1,
 },"<");
+
+
 
 tl.to(["#blue"], {
   y: -60,
@@ -31,6 +37,7 @@ tl.to("#green", {
   y: -105,
   duration: 0.3,
 }, "<");
+
 
 
 tl.to("#red", {
@@ -46,13 +53,10 @@ tl.to(["#green2"], {
 
 tl.to("#yellow", {
   y: -420,
-  duration: 0.8,
+  duration: 0.3,
 },"<");
 
-tl.to("#text", {
-  y: -150,
-  duration: 1,
-}, "<");
+
 
 tl.to("#hero-cover", {
   y: -300,
