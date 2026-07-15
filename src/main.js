@@ -16,7 +16,7 @@ const desktopTl = gsap.timeline({
 
 desktopTl.to("#pink", {
   y: -19,
-  duration: 0.2,
+  duration: 0.1,
 }, "<")
 
 .to("#text-desktop", {
@@ -50,20 +50,20 @@ desktopTl.to("#pink", {
 }, "<")
 
 .to(["#green2"], {
-  y: -370,
- duration: 0.2,
+  y: -350,
+ duration: 1.3,
 }, "<")
 
 
 .to("#yellow", {
-  y: -420,
-  duration: 0.3,
-},"<")
+  y: -400,
+  duration: 1,
+},)
 
 
 
 .to("#hero-cover", {
-  y: -180,
+  y: -350,
   duration: 1,
 }, "<");
 
@@ -99,7 +99,7 @@ mobileTl.to("#pink-mobile", {
 }, "<")
 
 .to(["#blue-mobile","#green-mobile"],{
- y:-80,
+ y:-90,
  duration: 0.6,
 },"<")
 
@@ -108,7 +108,7 @@ mobileTl.to("#pink-mobile", {
 
 
 .to("#green2-mobile",{
- y:-150,
+ y:-180,
  duration: 1,
 },"<")
 
@@ -121,12 +121,12 @@ mobileTl.to("#pink-mobile", {
 
 
 .to("#yellow-mobile",{
- y:-100,
+ y:-130,
  duration: 1.2,
 },)
 
 .to("#hero-cover-mobile", {
-  y: -227,
+  y: -300,
   duration: 1,
 }, "<");
 
