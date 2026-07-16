@@ -57,7 +57,7 @@ desktopTl.to("#pink", {
 
 .to("#yellow", {
   y: -400,
-  duration: 1,
+  duration: 0.9,
 },)
 
 
