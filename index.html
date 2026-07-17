@@ -4,9 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
 </head>
-<body>
+<body class="bg-[#EFECEA]">
     
+        <!-- navbar -->
+      <div class="flex justify-between items-center px-4 md:px-6 lg:px-8 py-3 sticky top-0 z-50">
+
+    <!-- Language -->
+       <div>
+         <h1 class="font-normal text-md md:text-3xl lg:text-2xl">
+            DE <br> EN
+         </h1>
+      </div>
+
+    <!-- Logo -->
+      <div>
+         
+       <a href="#">
+           <h1 class="lg:block md:block hidden font-semibold text-3xl md:text-[55px] lg:text-5xl">
+            Baumeister
+            </h1>
+       </a> 
+        <img src="src\Assets\navbar.png" alt="" class="md:hidden lg:hidden">
+        
+     </div>
+
+    <!-- Desktop Menu -->
+     <div class="hidden lg:block">
+        <ul class="text-2xl lg:text-right ">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </div>
+
+    <!-- Mobile Menu -->
+     <div class="lg:hidden">
+        <a href="src\menu.html">
+            <img src="src/Assets/menu.png" alt="menu" class="w-10 md:w-16">
+        </a>
+     </div>
+
+ </div>
+
+   
+
+
+        <!-- The Hero section  -->
+    <!-- Hero Text -->
+     <section class="hero relative">
+    
+          <div class="">
+
+         <!-- text on mobile -->
+            <div id="text-mobile" class="lg:hidden absolute text-left md:text-center lg:text-center ml-4 px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-[32px] mt-36  lg:text-[48px] z-[60] flex justify-center text-[#EFECEA] text-[24px]"> 
+            <h1>We create focus and <br>
+               drive impact with <br> 
+               communication that <br> 
+               clearly positions and <br> 
+               resonates.
+            </h1>
+          </div>
+
+
+         <!-- Text on desktop -->
+            <div id="text-desktop" class="hidden md:hidden lg:block absolute md:text-center lg:text-center px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-4xl mt-36  lg:text-5xl z-[60] flex justify-center text-[#EFECEA]"> 
+            <h1>We create focus and <br>
+               drive impact with <br> 
+               communication that <br> 
+               clearly positions and <br> 
+               resonates.
+            </h1>
+          </div>
+
+
+          <!-- Hero section on Small & medium screens -->
+          <div class="mobile-hero lg:hidden md:mt-64 mt-72 pb-30 h-[200vh] relative">
+             <img id="yellow-mobile" src="src/Assets/yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[77%]  z-10">
+             <img id="green-mobile" src="src/Assets/green.png" alt="" class="absolute top-[5%] left-[1%] right-[20%] w-[55%] z-50">
+             <img id="red-mobile" src="src/Assets/red.png" alt="" class="absolute  left-[17%] top-[15%] w-[80%] z-40">
+             <img id="pink-mobile" src="src/Assets/pink.png" alt="" class="absolute top-[1%] left-[66%] w-[21%] z-0">
+             <img id="blue-mobile" src="src/Assets/blue.png" alt="" class="absolute top-[5%]  right-[1%] w-[62%] z-30">
+             <img id="green2-mobile" src="src/Assets/green-right.png" alt="" class="absolute top-[7%] right-[0%] w-[42%] z-20">
+             <div id="hero-cover-mobile" class="absolute left-0 right-0 top-[420px] md:top-[725px] h-[20vh] bg-[#EFECEA] z-60"></div>
+            </div>
+        
+          
+
+            <!-- Hero section on desktop -->
+            <div class="desktop-hero lg:h-[250vh] lg:block md:hidden hidden relative">
+             <img id="yellow" src="src\Assets\yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[50%] h-[60%] z-10">
+             <img id="green" src="src\Assets\green.png" alt="" class="absolute top-[7%] left-[21%] w-[36%] z-30">
+             <img id="red" src="src\Assets\red.png" alt="" class="absolute  left-[9.5%] top-[26%] w-[50%] z-20">
+             <img id="pink" src="src\Assets\pink.png" alt="" class="absolute top-[1%] left-[37%] w-[22%] z-0">
+             <img id="blue" src="src\Assets\blue.png" alt="" class="absolute top-[4%] left-[40.5%] w-[44%] z-40">
+             <img id="green2" src="src\Assets\green-right.png" alt="" class="absolute top-[12%] right-[0%] w-[29%] z-30">
+             <div id="hero-cover" class="absolute left-0 right-0 top-[750px] h-[50vh] bg-[#EFECEA]  z-60"></div>
+             </div>
+             
+          </div>
+                
+         </section>
+
+    
+         <!-- About page -->
+          <section id="about" class="-mt-300 md:-mt-310 lg:-mt-187.5">
+            <div class="">
+                <p class="text-2xl tracking-tighter md:text-[38px] lg:text-[47px] leading-7 md:leading-14 lg:leading-20 text-left pl-10 pr-3 md:px-20 lg:pl-50 lg:pr-64 ">
+                  We are a Berlin-based communications 
+                  agency specialising in helping companies 
+                  and brands find their voice and position 
+                  themselves. Whether it's brand building, 
+                  identity sharpening, or communication 
+                  strategy, we bring a fresh perspective to 
+                  established structures, develop tailor-made 
+                  communication solutions, and ensure that 
+                  messages resonate. With over a decade of 
+                  experience, we have honed our skills in giving 
+                  brands their unmistakable identity and 
+                  making them visible in the long term.</p>
+            </div>
+          <section>
+
+          <!-- Service page -->
+         <div class="relative">
+          <div class="sticky top-0 z-10 lg:flex justify-center my-16 md:mt-20 "> <img src="src\Assets\aboutlg.png" class="w-38  mx-auto md:w-65 md:h-30 lg:w-57 lg:top-30 mt-5"></div>
+   
+       <section id="services">
+        <div class="flex justify-center gap-5">
+
+            <div class="flex flex-col md:flex-col lg:flex-row lg:px-40 gap-6 lg:justify-center pl-10 md:px-12 mt-16 lg:mt-5"> 
+
+             <div class="font-medium lg:font-medium text-2xl lg:-ml-12 md:text-[42px] lg:text-[48px] md:px-24 ">
+                <h1 class="mt-10 md:mt-10 lg:mt-36">Brand strategy</h1>
+                <h2 class="mt-8 md:mt-10 lg:mt-12">Corporate  Identity &  Website   development</h2>
+                <h3 class="mt-8 md:mt-10 lg:mt-12">SEO & copywriting</h3>
+                <h4 class="mt-8 md:mt-10 lg:mt-12">Media Relations</h4>
+                <h5 class="mt-8 md:mt-10 lg:mt-12">Digital marketing & content production</h5>
+                <h6 class="mt-8 md:mt-10 lg:mt-12">Influencer  relations</h6>
+             </div>
+            
+             <div class="relative flex justify-center ">
+
+                <div class="mx-auto"><img src="src\Assets\service.svg"  class="w-75 mt-14 md:w-120 lg:w-270  lg:mt-52 "></div>
+
+                <div  class="absolute inset-0 items-center justify-center flex">
+                <p class="text-left font-medium text-[#EFECEA] text-[15px] md:text-[26px] lg:text-[19px] leading-5 md:leading-8 lg:leading-7 max-w-[65%] md:max-w-[57%] lg:max-w-[80%] lg:mb-28 mt-16 lg:mx-12  mx-3 md:ml-8" >
+                    Our strategic approach is a 
+                    collaborative journey that starts 
+                    with analysing the initial situation 
+                    and leads to messages that cut 
+                    through the information 
+                    overload. We take care of content 
+                    production and maintain 
+                    relationships with multipliers to 
+                    position your brand in the best 
+                    possible way. From analysis to 
+                    implementation, we accompany 
+                    you every step of the way, 
+                    ensuring that every measure is 
+                    effective.
+                </p>
+                </div>
+             </div>
+
+            </div>
+        </div>
+       </section>
+      
+      
+      
+       
+       <!-- Reference -->
+        <section id="reference">
+        
+        <div class=" relative mt-16 md:mt-28 z-40 text-right md:text-right lg:text-right px-14 md:px-30 lg:pr-48 font-outfit text-xl md:text-2xl lg:text-2xl pb-20 md:pb-32 lg:pb-50 pt-16 md:pt-20 lg:pt-30 [clip-path:polygon(0_0,100%_0%,100%_90%,40%_95%,0_91%)] bg-[#FFE800]">
+          <ul>
+            <li><a href="https://acehotel.com/">Ace Hotel</a></li>
+            <li><a href="https://www.armedangels.com/">ARMEDANGELS</a></li>
+            <li><a href="https://berlindesignweek.com/">Berliner Berg</a></li>
+            <li><a href="https://www.instagram.com/biteclubberlin/?hl=de">BITE CLUB</a></li>
+            <li><a href="https://budweiserbudvar.com/?redirect_from=de&redirect_code=3">Budweiser Budvar</a></li>
+            <li><a href="https://www.instagram.com/chungkingnoodles/?hl=de">ChungKing Noodles</a></li>
+            <li><a href="https://designpreis-brandenburg.de/">Designpreis-brandenburg</a></li>
+            <li><a href="https://www.tk.de/techniker">Die techniker</a></li>
+            <li><a href="https://europeanstreetfood.com/">European Street Food Awards</a></li>
+            <li><a href="https://www.grundmann-dentistry.de/">Grundmann Dentistry</a></li>
+            <li><a href="https://www.hornbach.de/aktuelles/werkstueck-edition/">HORNBACH werkstuck</a></li>
+            <li><a href="https://www.hornbach.de/nachhaltigkeit/hornbach-macht-schule/">HORNBACH macht schule</a></li>
+            <li><a href="https://ifdesign.com/de/">iF Design</a></li>
+            <li><a href="https://kopka.berlin/">Kopka</a></li>
+            <li><a href="https://klh-massschuhe.com/de">KLH MaBschuhe</a></li>
+            <li><a href="https://www.lode-stijn.de/">Lode & Stijn</a></li>
+            <li><a href="https://luya.bio/">Luya</a></li>
+            <li><a href="https://www.meissen.com/net/">MEISSEN</a></li>
+            <li><a href="https://www.motelminibar.com/">Motel Beer & Coffee</a></li>
+            <li><a href="https://www.paperandtea.de/">PAPER AND TEA</a></li>
+            <li><a href="https://www.rocketandbasil.com/">Rocket & basil</a></li>
+            <li><a href="https://gruppe.seeberger.de/de/">Seeberger Gruppe</a></li>
+            <li><a href="https://shioriberlin.com/">Shiori</a></li>
+            <li><a href="https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/wirtschafts-wissenschaftsschutz/2023-03-23-spoc-magazin.html">SPOC Magazin</a></li>
+            <li><a href="https://www.stocubo.de/de/">Stocubo</a></li>
+            <li><a href="https://sturcookware.de/">STUR</a></li>
+            <li><a href="https://www.worldofcoffee.org/">World of Coffee</a></li>
+            <li><a href="https://yamo.bio/lander">yamo</a></li>
+            <li><a href="https://www.house-of-communication.com/de/en.html">Serviceplan</a></li>
+          </ul>
+        </div>
+      
+        </section>
+      
+      </div>
+
+        <!-- Footer or Contact -->
+<section id="contact">
+
+        <div class=" md:flex md:justify-center px-7 md:mt-7 lg:mb-10">
+           <img src="src\Assets\red-footer.png" class=" w-87  lg:w-150">
+        </div>
+        
+        <div class="md:flex md:gap-80">
+            <div class=" font-medium md:font-medium  text-[15px] mx-4  md:px-2 mt-28 lg:hidden ">
+           <a href="#"><p>Agentur Baumeister</p>
+           <p>Böckhstraße 13</p>
+           <p>10967 Berlin</p></a>
+           
+        </div>
+
+            </a>
+       
+         <div class="font-medium text-[15px] mx-4 mt-8  md:mt-28 lg:hidden">
+            <a href="mailto:hallo@agentur-baumeister.com" class="underline">hallo@agentur-baumeister.com</a>
+            <p class="md:text-right">+49 (0)30 - 490 827 87</p>
+         </div>
+        </div>
+    
+        
+          <div class="font-medium md:font-medium flex justify-between gap-2 text-[15px] mt-11 mx-4 pb-5 md:px-2 md:pb-12 lg:hidden">
+              <a href="src/policy.html" class="no-underline">Data Privacy</a>
+              <a href="src/imprint.html" class="no-underline">Imprint</a>
+              <a href="https://www.linkedin.com/company/agentur-baumeister/" class="no-underline">LinkedIn</a>
+              <a href="https://www.instagram.com/baumeister_agency" class="no-underline mr-3">Instagram</a>
+          </div>
+        
+      
+          <!-- DESKTOP FORMAT -->
+           
+          <div class="md:hidden hidden lg:block lg:mt-20 lg:pb-7  ">
+            <ul class="lg:flex lg:justify-around lg:font-semibold lg:text-2xl ">
+             <li class=""><a href="#">Agentur Baumeister <br> Böckhstraße 13 <br> 10967 Berlin</a></li>
+             <li><h1 class="underline">hallo@agentur-baumeister.com</h1><h1>+49 (0)30 - 490 827 87</h1></li>
+             <li><a href="https://www.linkedin.com/company/agentur-baumeister/about/">LinkedIn</a></li>
+             <li><a href="https://www.instagram.com/baumeister_agency">Instagram</a></li>
+             <li class="text-right"><a href="src/imprint.html">Imprint</a> <br> <a href="src/policy.html">Data Privacy</a></li>
+             
+            </ul>
+          </div>
+</section>
+
+         <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+         <script src="./src/main.js"></script>
+
+
 </body>
 </html>

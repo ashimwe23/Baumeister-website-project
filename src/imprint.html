@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprint page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
 
 </head>
 <body class = "bg-[#EFECEA] text-[#00672E] flex flex-col gap-y-10 ml-[19px] font-['Outfit'] text-[24px] justify-center md:text-[20px] md:mx-10">
 
     <!--First part-->
 
-    <nav class = "flex justify-between items-center mt-12 md:mt-[27px] md:fixed md:top-0 md:left-0 md:w-full md:bg-[#EFECEA] md:z-50">
+    <nav class = "flex justify-between items-center mt-12 md:mt-[27px] md:fixed md:top-0 md:left-0 md:w-full md:z-50">
 
 <p class="md:mx-3">DE <br> EN</p>
-<h1 class="text-2xl font-semibold text-center text-[32px] md:text-[48px] md:font-semibold fixed top-13 left-[50%] md:left-1/2 -translate-x-1/2 md:top-7 left-60">Baumeister</h1>
+<a href="../index.html">
+   <h1 class="text-2xl font-semibold text-center text-[32px] md:text-[48px] md:font-semibold fixed top-13 left-[50%] md:left-1/2 -translate-x-1/2 md:top-7 left-60">Baumeister</h1> 
+</a>
 
 <a href="menu.html" class="lg:hidden fixed top-15 right-0">
     <img src="Group 5.png" class="bg-transparent" >
@@ -24,10 +33,10 @@
 <!--responsiveness-->
 
 <div class=" hidden lg:flex flex-col text-right mx-3">
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">References</a>
-<a href="#">Contact</a>
+<a href="/#about">About</a>
+<a href="/#services">Services</a>
+<a href="/#reference">References</a>
+<a href="/#contact">Contact</a>
 </div>
 
 
@@ -113,7 +122,7 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
     </div><!--grand div-->
     
     <!--Third part-->
-    <div class="w-[355px] h-[420px] mt-[103px] flex flex-col gap-6 md:w-[360px] md:h[360px] md:mt-[462px] ml-[300px] md:text-right">
+    <div class="w-[355px] h-[420px] mt-[103px] flex flex-col gap-6 md:min-w-[360px] md:min-h-[360px] md:mt-[600px] ml-[300px] md:text-right md:ml-5">
         <h2 class="font-bold">DISCLAIMER</h2>
     <p class="leading-[1.35] md:px-2 max-w-[360px]">Despite all due care, no liabiliry can be accepted for the accuracy, completeness and up-
         to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister com
@@ -126,8 +135,8 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
 </div>
 
 <!--Responsive part 4-->
-<div class="hidden md:flex md:justify-center md:mt-[300px]">
-    <img src="Vector 7.png" class="sticky">
+<div class="hidden md:flex md:justify-center md:mt-[200px] lg:mb-10">
+    <img src="Vector 7.png" class="sticky lg:w-[850px]">
 </div>
 
 
@@ -143,12 +152,57 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
 </div>
 
     <div class="w-[211px] h-[57px] ml-[17px] text-[15px] mt-[21px] md:hidden">
-        <a href="#">hallo@agentur-baumeister.com</a>
-        <p>+49 (0)30 - 490 827 87</p>
+        <a href="mailto:hallo@agentur-baumeister.com" class="underline">hallo@agentur-baumeister.com</a>
+        <a href="index.html">
+            <p>+49 (0)30 - 490 827 87</p>
+        </a>
     </div>
 
     <!--responsive footer-->
-<div class="hidden md:flex md:justify-between">
+        <div class="hidden md:flex md:justify-between lg:hidden">
+            <div>
+                <a href="index.html">
+                <p>Agentur Baumeister</p>
+                <p>Böckhstraße 13</p>
+                <p>10967 Berlin</p>
+                </a>
+                
+            </div>
+            
+                <div>
+                    <a href="mailto:hallo@agentur-baumeister.com"class="underline">hallo@agentur-baumeister.com</a>
+                    <p>+49 (0)30 - 490 827 87</p>
+                </div>
+            
+        </div>
+        
+        
+        
+        <!--Last part-->
+        <div class="flex justify-between gap-2 text-[15px] mt-[68px] md:hidden lg:hidden">
+            <a href="policy.html" class="no-underline">Datenschutz</a>
+            <a href="#" class="no-underline">Impressum</a>
+            <a href="https://www.linkedin.com/company/agentur-baumeister/" class="no-underline">LinkedIn</a>
+            <a href="https://www.instagram.com/baumeister_agency" class="no-underline mr-3">Instagram</a>
+        </div>
+        
+        <!--responsive-->
+        <!--Last part-->
+        <div class="hidden md:flex md:justify-between lg:hidden">
+            <a href="https://www.linkedin.com/company/agentur-baumeister/" class="no-underline">LinkedIn</a>
+            <a href="https://www.instagram.com/baumeister_agency" class="no-underline">Instagram</a>
+            <a href="#" class="no-underline">Impressum</a>
+            <a href="policy.html" class="no-underline">Datenschutz</a>
+            
+        </div>
+
+
+
+<!--responsivness desktop footer-->
+
+<div class="hidden md:hidden lg:flex justify-between">
+
+<div class="hidden lg:flex md:hidden lg:gap-x-30 ">
     <div>
         <p>Agentur Baumeister</p>
         <p>Böckhstraße 13</p>
@@ -156,7 +210,7 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
     </div>
     
         <div>
-            <a href="#">hallo@agentur-baumeister.com</a>
+            <a href="mailto:hallo@agentur-baumeister.com" class="underline">hallo@agentur-baumeister.com</a>
             <p>+49 (0)30 - 490 827 87</p>
         </div>
     
@@ -164,22 +218,25 @@ refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no
 
 
 
-<!--Last part-->
-<div class="flex justify-between gap-2 text-[15px] mt-[68px] md:hidden">
-    <a href="#" class="no-underline">Datenschutz</a>
+
+<div class="hidden lg:flex lg:justify-between md:hidden lg:gap-30">
+    <a href="https://www.linkedin.com/company/agentur-baumeister/" class="no-underline">LinkedIn</a>
+    <a href="https://www.instagram.com/baumeister_agency" class="no-underline">Instagram</a>
+    <div class="hidden lg:flex lg:flex-col lg:items-center md:flex md:hidden">
     <a href="#" class="no-underline">Impressum</a>
-    <a href="#" class="no-underline">LinkedIn</a>
-    <a href="#" class="no-underline">Instagram</a>
+    <a href="policy.html" class="no-underline">Datenschutz</a>
+    </div>
+    
 </div>
 
-<!--responsive-->
-<!--Last part-->
-<div class="hidden md:flex md:justify-between">
-    <a href="#" class="no-underline">LinkedIn</a>
-    <a href="#" class="no-underline">Instagram</a>
-    <a href="#" class="no-underline">Impressum</a>
-    <a href="#" class="no-underline">Datenschutz</a>
+
 </div>
+
+
+
+    
+
+
 
 </body>
 </html>
